@@ -16,6 +16,7 @@ public class ParticipantService {
 	}
 
 	public Collection<Participant> getAll() {
+		System.out.println("aaa");
 		return connector.getSession().createCriteria(Participant.class).list();
 	}
 
